@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar/Navbar'
 import Carousel from './components/Carousel/Carousel'
 import Destaques from './components/Destaques/Destaques'
+import ProdutosMaisDesejados from './components/ProdutosMaisDesejados/ProdutosMaisDesejados'
 
 import './App.sass'
 
@@ -18,6 +19,7 @@ function App() {
         <Carousel />
         <div className='p-3'>
           <Destaques />
+          <ProdutosMaisDesejados />
         </div>
       </Row>
     </div>  

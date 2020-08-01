@@ -14,13 +14,13 @@ export default class Destaques extends Component {
                     <h3 className='destaque_title pb-1 pt-3'>EM DESTAQUE</h3>
                 </Col>
                 <Col md={4}>
-                    <Image fluid src={destaques_images.destaque01} />
+                    <Image fluid style={{width: '100%'}} src={destaques_images.destaque01} />
                 </Col>
                 <Col md={4}>
-                    <Image fluid src={destaques_images.destaque01} />
+                    <Image fluid style={{width: '100%'}} src={destaques_images.destaque01} />
                 </Col>
                 <Col md={4}>
-                    <Image fluid src={destaques_images.destaque01} />
+                    <Image fluid style={{width: '100%'}} src={destaques_images.destaque01} />
                 </Col>
             </Row>
         )

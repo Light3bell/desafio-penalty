@@ -7,7 +7,6 @@ const carousel_images = {
     banner_06: require('../../assets/banner_site_penalty_06.png'),
     arrow_back: require('../../assets/arrow_back_icon.png'),
     arrow_next: require('../../assets/arrow_next_icon.png')
-
 }
 
 export default () => (
