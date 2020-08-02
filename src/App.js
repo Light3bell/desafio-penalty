@@ -8,7 +8,7 @@ import Navbar from './components/Navbar/Navbar'
 import Carousel from './components/Carousel/Carousel'
 import Destaques from './components/Destaques/Destaques'
 import ProdutosMaisDesejados from './components/ProdutosMaisDesejados/ProdutosMaisDesejados'
-
+import CadastroNewsletter from './components/CadastroNewsletter/CadastroNewsletter'
 import './App.sass'
 
 function App() {
@@ -22,6 +22,7 @@ function App() {
           <ProdutosMaisDesejados />
         </div>
       </Row>
+      <CadastroNewsletter />
     </div>  
   );
 }
