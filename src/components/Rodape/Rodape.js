@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import {Row, Col, Image} from 'react-bootstrap'
 import './Rodape.sass'
 
-const logo_penalty = require("../../assets/logo_penalty_black.png")
+const logo_penalty = require("../../assets/logo_penalty_black.png").default
 
 export default class Rodape extends Component {
     render() {
@@ -15,8 +15,8 @@ export default class Rodape extends Component {
                     são válidos exclusivamente para compras realizadas via internet e poderão sofrer alteração sem aviso prévio.
                     Em caso de divergência, o preço válido é sempre o do carrinho de compras.
                 </Col>
-                <Col sm={2}>
-                    <Image fluid src={logo_penalty} />
+                <Col sm={2} className='d-flex align-items-center justify-content-center'>
+                    <Image fluid src={logo_penalty} className='rodape_penalty_logo' />
                 </Col>
             </Row>
         )
