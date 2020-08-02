@@ -1,13 +1,16 @@
 ## Desafio Penalty
 
-### Para iniciar o projeto (teste) basta executar os seguintes comandos em dois terminais distintos:
+### Para iniciar o projeto (teste) basta executar:
 
-`npm start` (inicia o front-end da aplicação).
-`npm api` (inicia o back-end da aplicação).
+`npm install` (Realiza a instalação dos pacotes da aplicação).  
+`npm start` (inicia o front-end da aplicação).  
+`npm run api` (inicia o back-end da aplicação).  
+
+### Você deverá executar `npm start` e `npm api` simultaneamente em terminais distintos.
 
 OBS: O back-end da aplicação é utilizado apenas para o cadastro de e-mails, será gerado um arquivo .txt na raiz do projeto com os dados coletados no formulário de cadastro.
 
-### Para compilar o projeto (produção) basta executar o seguinte comando:
+### Para compilar o projeto (produção) basta executar:
 
 `npm run build`
 
