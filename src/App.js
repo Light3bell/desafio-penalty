@@ -10,6 +10,8 @@ import Destaques from './components/Destaques/Destaques'
 import ProdutosMaisDesejados from './components/ProdutosMaisDesejados/ProdutosMaisDesejados'
 import CadastroNewsletter from './components/CadastroNewsletter/CadastroNewsletter'
 import SobreNos from './components/SobreNos/SobreNos'
+import Rodape from './components/Rodape/Rodape'
+
 import './App.sass'
 
 function App() {
@@ -25,6 +27,7 @@ function App() {
       </Row>
       <CadastroNewsletter />
       <SobreNos />
+      <Rodape />
     </div>  
   );
 }
