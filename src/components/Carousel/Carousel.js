@@ -2,12 +2,10 @@ import React from 'react'
 import { Carousel } from "react-responsive-carousel";
 import './Carousel.sass'
 
-
 const banner_03  = require('../../assets/banner_site_penalty_03.png').default
 const banner_06  = require('../../assets/banner_site_penalty_06.png').default
 const arrow_back = require('../../assets/arrow_back_icon.png').default
 const arrow_next = require('../../assets/arrow_next_icon.png').default
-
 
 export default () => (
     <Carousel 
