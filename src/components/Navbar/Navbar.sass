@@ -1,6 +1,10 @@
 .navbar
     background: #fff
 
+.navbar_brand
+    @media (max-width: 767px) 
+        margin-bottom: 1rem
+
 .search_input
     padding: 0.5rem
     background-color: #f7f7f7
@@ -10,6 +14,8 @@
     font-weight: 600
     width: 100%
     padding-right: 20%
+    @media (max-width: 768px) 
+        padding-right: 35%
 
 .search_input_icon
     width: 30px
@@ -17,6 +23,15 @@
     top: 15%
     left: 85%
     cursor: pointer
+    @media (max-width: 768px) 
+        left: 75%
+        
+.navbar_links
+    @media (min-width: 769px)
+        display: block !important
+    @media (max-width: 768px) 
+        display: none
+        margin-top: 1rem
 
 .navlink
     font-weight: 600
@@ -25,3 +40,11 @@
 
 .navlink-active
     color: #009b4f !important
+
+.menu_icon
+    display: none
+    max-width: 40px
+    cursor: pointer
+    @media (max-width: 768px)
+        display: block
+    
