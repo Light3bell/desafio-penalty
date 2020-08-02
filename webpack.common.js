@@ -44,9 +44,9 @@ module.exports = {
                         query: {
                             mozjpeg: { progressive: true, },
                             gifsicle: { interlaced: true, },
-                            optipng: { optimizationLevel: 7, }
-                        }
-                    }
+                            optipng: { optimizationLevel: 7 },
+                        },
+                    },
                 }]
             },
             { test: /\.s(a|c)ss$/, use: [{ loader: 'style-loader' }, 

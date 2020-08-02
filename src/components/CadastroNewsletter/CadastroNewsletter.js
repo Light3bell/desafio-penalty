@@ -4,17 +4,22 @@ import './CadastroNewsletter.sass'
 
 export default class CadastroNewsletter extends Component {
 
-    state = {nome: '', email: ''}
+    state = {name: '', email: ''}
 
-    registerEmail = () => {
-        let {nome, email} = this.state
-        if(nome.trim() == '' || email.trim() == ''){
+    registerEmail = async () => {
+        let {name, email} = this.state
+        if(name.trim() == '' || email.trim() == ''){
             alert('Preencha todos os campos!')
         }else if(!this.validateEmail(email)){
             alert('E-mail inválido!')
         }else{
-            alert('Cadastro feito com sucesso!')
-            this.setState({nome: '', email: ''})
+            try {
+                await fetch(`http://127.0.0.1:3333/cadastroNewsletter?name=${name}&email=${email}`, {mode: 'no-cors'})
+                this.setState({name: '', email: ''})
+                alert('Cadastro efetuado com sucesso!')
+            } catch (error) {
+                alert('Erro ao realizar cadastro!')
+            }
         }
     }
 
@@ -29,7 +34,7 @@ export default class CadastroNewsletter extends Component {
                     RECEBER NOVIDADES DA PENALTY
                 </Col>
                 <Col md={2}>
-                    <input value={this.state.nome} onChange={(event) => this.setState({nome: event.target.value})} className='newsletter_input' placeholder='NOME' type='text'/>
+                    <input value={this.state.name} onChange={(event) => this.setState({name: event.target.value})} className='newsletter_input' placeholder='NOME' type='text'/>
                 </Col>
                 <Col md={2}>
                     <input value={this.state.email} onChange={(event) => this.setState({email: event.target.value})} className='newsletter_input' placeholder='E-MAIL' type='email'/>
