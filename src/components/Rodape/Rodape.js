@@ -2,9 +2,7 @@ import React, { Component } from 'react'
 import {Row, Col, Image} from 'react-bootstrap'
 import './Rodape.sass'
 
-const rodape_images = {
-    logo_penalty: require("../../assets/logo_penalty_black.png"),
-}
+const logo_penalty = require("../../assets/logo_penalty_black.png")
 
 export default class Rodape extends Component {
     render() {
@@ -18,7 +16,7 @@ export default class Rodape extends Component {
                     Em caso de divergência, o preço válido é sempre o do carrinho de compras.
                 </Col>
                 <Col sm={2}>
-                    <Image fluid src={rodape_images.logo_penalty} />
+                    <Image fluid src={logo_penalty} />
                 </Col>
             </Row>
         )

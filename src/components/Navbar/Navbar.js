@@ -1,21 +1,20 @@
 import React, { Component } from 'react'
 import {Row, Col, Image} from 'react-bootstrap'
 import './Navbar.sass'
-const navbar_images = {
-    logo_penalty: require("../../assets/logo_penalty.png"),
-    search_icon: require("../../assets/search_icon.png")
-}
+
+const logo_penalty = require("../../assets/logo_penalty.png").default
+const search_icon = require("../../assets/search_icon.png").default
 
 export default class Navbar extends Component {
     render() {
         return (
             <Row className='navbar p-2 pl-5 pr-5 align-items-center justify-content-around'>
                 <Col sm={3}>
-                    <a href='#home'><Image src={navbar_images.logo_penalty} fluid /></a>
+                    <a href='#home'><Image src={logo_penalty} fluid /></a>
                 </Col>
                 <Col sm={3}>
                     <input className='search_input' placeholder='ENCONTRE SEUS PRODUTOS'/>
-                    <a href='#search'><Image src={navbar_images.search_icon} className='search_input_icon' fluid /></a>
+                    <a href='#search'><Image src={search_icon} className='search_input_icon' fluid /></a>
                 </Col>
                 <Col sm={5}>
                     <Row>
