@@ -4,7 +4,7 @@
 
 `npm install` (Realiza a instalação dos pacotes da aplicação).  
 `npm start` (inicia o front-end da aplicação).  
-`npm api` (inicia o back-end da aplicação).  
+`npm run api` (inicia o back-end da aplicação).  
 
 ### Você deverá executar `npm start` e `npm api` simultaneamente em terminais distintos.
 
