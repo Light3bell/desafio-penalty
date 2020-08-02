@@ -19,11 +19,11 @@ export default class Navbar extends Component {
                 <Col xs={2} className='menu_icon'>
                     <Image src={menu_icon} onClick={this.openCloseMenu} fluid className='menu_icon' />
                 </Col>
-                <Col md={3} xs={8}>
+                <Col md={4} xs={8}>
                     <input className='search_input' placeholder='ENCONTRE SEUS PRODUTOS'/>
                     <a href='#search'><Image src={search_icon} className='search_input_icon' fluid /></a>
                 </Col>
-                <Col md={5} className='navbar_links'>
+                <Col md={4} className='navbar_links'>
                     <Row>
                         <Col className='p-0 text-center' lg={3}>
                             <a href='#bolas' className='navlink navlink-active'>BOLAS</a>
