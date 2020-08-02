@@ -9,6 +9,7 @@ import Carousel from './components/Carousel/Carousel'
 import Destaques from './components/Destaques/Destaques'
 import ProdutosMaisDesejados from './components/ProdutosMaisDesejados/ProdutosMaisDesejados'
 import CadastroNewsletter from './components/CadastroNewsletter/CadastroNewsletter'
+import SobreNos from './components/SobreNos/SobreNos'
 import './App.sass'
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         </div>
       </Row>
       <CadastroNewsletter />
+      <SobreNos />
     </div>  
   );
 }
