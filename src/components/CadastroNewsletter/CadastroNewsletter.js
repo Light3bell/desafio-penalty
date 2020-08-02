@@ -24,17 +24,17 @@ export default class CadastroNewsletter extends Component {
     }
     render() {
         return (
-            <Row className='align-items-center justify-content-center p-3 mt-5' style={{background: '#009b4f'}}>
-                <Col sm={3} className='newsletter_title'>
+            <Row className='align-items-center justify-content-center p-3 mt-5 container_newsletter' style={{background: '#009b4f'}}>
+                <Col md={3} className='newsletter_title'>
                     RECEBER NOVIDADES DA PENALTY
                 </Col>
-                <Col sm={2}>
+                <Col md={2}>
                     <input value={this.state.nome} onChange={(event) => this.setState({nome: event.target.value})} className='newsletter_input' placeholder='NOME' type='text'/>
                 </Col>
-                <Col sm={2}>
+                <Col md={2}>
                     <input value={this.state.email} onChange={(event) => this.setState({email: event.target.value})} className='newsletter_input' placeholder='E-MAIL' type='email'/>
                 </Col>
-                <Col sm={2}>
+                <Col md={2}>
                     <button className='btn_newsletter' onClick={this.registerEmail}>CADASTRAR</button>
                 </Col>
             </Row>
