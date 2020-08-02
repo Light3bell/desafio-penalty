@@ -1,0 +1,21 @@
+{
+  "name": "API",
+  "version": "1.0.0",
+  "description": "API Teste Cadastro ",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "scripts": {
+    "test": "test",
+    "start": "node ./bin/server.js"
+  },
+  "author": "Raí Soares",
+  "license": "ISC"
+}
