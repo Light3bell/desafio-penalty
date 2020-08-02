@@ -27,7 +27,7 @@ export default class ProdutosMaisDesejados extends Component {
 
         return (
             <Row>
-                <Col md={12} className='pb-1 pt-5 d-flex row align-items-center justify-content-between'>
+                <Col md={12} className='pb-1 pt-5 d-flex align-items-center justify-content-between'>
                     <h3 className='products_title'>PRODUTOS MAIS DESEJADOS</h3>
                     <a href='#vertodos' className='btn_show_all'>VER TODOS</a>
                 </Col>

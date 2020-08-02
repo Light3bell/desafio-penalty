@@ -9,9 +9,9 @@ export default class Produto extends Component {
         const plots_value = listPrice / 6
 
         return (
-            <Col md={2} className='product_card mt-3'>
+            <Col sm={5} md={4} lg={3} xl={2} className='product_card mt-3'>
                 <div className='product_header d-flex justify-content-center align-items-center' style={{overflow: 'hidden'}}>
-                    <Image style={{maxWidth: '70%', height: 'auto'}} src={productImageUrl} />
+                    <Image src={productImageUrl} />
                 </div>
                 <div className='product_body'>
                     <h5 className='product_title'>{productName}</h5>
